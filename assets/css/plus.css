@@ -1,0 +1,11 @@
+.carousel-inner .item{
+margin-left:-150px;
+padding-left:50%;
+
+}
+.main-icon-fixed{
+position:fixed;
+top:-140px;
+margin-left:-70px;
+left:50%;
+}
