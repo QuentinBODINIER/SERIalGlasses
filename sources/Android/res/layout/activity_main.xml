@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#191919"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+     <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Looking for connected glasses..."
+            android:layout_weight="0.1"
+            android:textColor="#cccccc"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="top|center_horizontal"
+        android:src="@drawable/proto2" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.1"
+        android:visibility="gone"
+        android:text="Connect" 
+        android:textColor="#cccccc"
+   		/>
+     <TextView
+            android:id="@+id/textViewFail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please pair with smart glasses before running the app"
+            android:layout_weight="0.1"
+            android:textColor="#cccccc"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/progressBarConnect"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2" />
+
+</LinearLayout>

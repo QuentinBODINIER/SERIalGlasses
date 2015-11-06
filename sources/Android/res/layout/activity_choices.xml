@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="1"
+    tools:context=".ChoicesActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8e44ad"
+            android:clickable="true"
+            android:onClick="startRoute"
+            android:focusable="false" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Itinéraire"
+                android:textColor="#ffffff"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textSize="@android:dimen/app_icon_size" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/route" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:background="#01c7fd"
+            android:clickable="true"
+            android:onClick="startDebug"
+            android:focusable="false" >
+             <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Debug"
+                android:textColor="#ffffff"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@android:color/white"
+                android:textSize="@android:dimen/app_icon_size" />
+             <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/engrenage" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" >
+
+        </TableRow>
+    </TableLayout>
+    
+</LinearLayout>
